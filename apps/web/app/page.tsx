@@ -7,7 +7,7 @@ export default function Home() {
   const [result, setResult] = useState("");
 
   async function handleValidate() {
-    const res = await fetch("http://localhost:8787", {
+    const res = await fetch("https://worker-docs.rafaempresarial312.workers.dev", {
       method: "POST",
       body: JSON.stringify({ cpf })
     });
