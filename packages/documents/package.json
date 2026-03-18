@@ -1,0 +1,19 @@
+{
+  "name": "@repo/documents",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./validate-cpf": {
+      "types": "./src/validateCpf.ts",
+      "default": "./dist/validateCpf.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "tsx": "^4.21.0",
+    "typescript": "latest"
+  }
+}
