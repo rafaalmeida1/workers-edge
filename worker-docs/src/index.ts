@@ -27,7 +27,7 @@ export default {
 			}
 
 			// chama backend
-			const response = await fetch("http://localhost:3002/api/validate", {
+			const response = await fetch("https://workers-edge-api.vercel.app/api/validate", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json"
